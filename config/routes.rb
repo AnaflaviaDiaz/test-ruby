@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   # # root "posts#index"
 
   # new code
-  root "application#hello"
-  # root "pages#home"
+  # root "application#hello"
+  root "pages#home" # ruta raíz de la aplicación, se muestra el método home del controlador pages
+  get "about", to: "pages#about" # ruta para la página "Acerca de"
   # new code
 end
